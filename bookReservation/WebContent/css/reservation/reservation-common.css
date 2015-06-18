@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+
+/* 디버깅용 */
+div, section, article{
+	/* border:1px solid black; */
+}
+
+#reservationContent{
+		
+}
+
+#reservationContent .leftSnb{
+	display:inline-block;
+	width:20%;
+	min-height:200px;
+	vertical-align:top;
+	text-align:center;
+}
+
+#reservationContent .rightContent{
+	display:inline-block;
+	width:60%;
+	min-height:600px;
+	text-align:center;
+	
+}
+
+.hidden{
+	display:none;
+}
+
+
+
