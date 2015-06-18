@@ -14,7 +14,7 @@ import com.homepage.reservation.beans.R​eservationBean;
 /**
  * Servlet implementation class reservationControllerMine
  */
-@WebServlet({"/result.soso","/del.soso","/reservation.soso"})
+@WebServlet({"/result.soso","/del.soso","/reservation.soso","/reservationResult.soso"})
 public class ReservationControllerMine extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	 String memberId;
@@ -25,6 +25,8 @@ public class ReservationControllerMine extends HttpServlet {
 		  switch (request.getServletPath()) {
 		  case "/reservation.soso" : RequestDispatcher dispatcher = request.getRequestDispatcher("/views/reservation/reservationSeatForm.jsp");
 		  							dispatcher.forward(request, response); break;
+		  case "/reservationResult.soso" : RequestDispatcher dispatcher1 = request.getRequestDispatcher("/views/reservation/resultForm.jsp");
+			dispatcher1.forward(request, response); break;							
 		  case "/result.soso" : goResult(request, response); break;
 		  case "/del.soso" : goDel(request, response); break;
 		  default:

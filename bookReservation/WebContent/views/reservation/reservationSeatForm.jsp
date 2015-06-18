@@ -41,7 +41,8 @@
 			
 			<h2>예약일</h2>
 				<p>최대 예약일은 7일간 입니다.</p>
-				<p><label for="wanted">원하는 예약일</label> <input id="wanted"					name="wanted" type="date" /> <!-- date month week time datetime -->
+				<p><label for="wanted">원하는 예약일</label> <input id="wanted" 
+				name="wanted" type="date" /> <!-- date month week time datetime -->
 					<!-- <input type="time" name="time" id="time" /> --></p>
 			
 			
